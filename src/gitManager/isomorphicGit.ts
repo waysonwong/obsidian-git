@@ -149,7 +149,7 @@ export class IsomorphicGit extends GitManager {
         let notice: Notice | undefined;
         const timeout = window.setTimeout(() => {
             notice = new Notice(
-                "This takes longer: Getting status",
+                "[Async status] This takes longer: Getting status",
                 this.noticeLength
             );
         }, 20000);
@@ -933,7 +933,7 @@ export class IsomorphicGit extends GitManager {
         let notice: Notice | undefined;
         const timeout = window.setTimeout(() => {
             notice = new Notice(
-                "This takes longer: Getting status",
+                "[Get Unstaged Files] This takes longer: Getting status",
                 this.noticeLength
             );
         }, 20000);
