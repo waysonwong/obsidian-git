@@ -152,7 +152,8 @@ export class IsomorphicGit extends GitManager {
                 "[Async status] This takes longer: Getting status",
                 this.noticeLength
             );
-        }, 20000);
+        // }, 20000);
+        }, 600000);
         try {
             this.plugin.setPluginState({ gitAction: CurrentGitAction.status });
             const status = (
@@ -936,7 +937,8 @@ export class IsomorphicGit extends GitManager {
                 "[Get Unstaged Files] This takes longer: Getting status",
                 this.noticeLength
             );
-        }, 20000);
+            // }, 20000);
+        }, 600000);
         try {
             const repo = this.getRepo();
             const res = await this.wrapFS<Promise<UnstagedFile[]>>(
